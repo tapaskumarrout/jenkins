@@ -5,6 +5,11 @@ pipeline {
     steps {
         echo "Hello I am here."
     }
+    steps {
+            echo "Tumne Khana Khaya Munu."
+            echo "======================="
+            ls -lrt
+        }
   }
  }
 }
