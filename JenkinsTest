@@ -16,6 +16,8 @@ pipeline {
                                 }
             }
             post{
-             echo 'I am always happy.'
+             always{
+                echo 'I am always happy.'
+             }
             }
          }
