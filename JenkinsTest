@@ -18,10 +18,10 @@ pipeline {
             post{
              always{
                 echo 'I am always happy.'
-             }
-            }
-              changed{
-                            echo 'I am always changed.'
-                      }
+                }
 
+              changed{
+                echo 'I am always changed.'
+                }
+            }
          }
