@@ -8,10 +8,13 @@ pipeline {
                                     }
                                 }
             stage("Check Status2"){
-                                steps {
-                                    echo "Tumne Khana Khaya Munu."
+                                environment {
+                                    ENV_URL="google.com"
+                                    }
+                                steps{
                                     echo "======================="
-                                    sh 'ls'
+                                    echo ENV_URL
+
                                     }
                                 }
             }
