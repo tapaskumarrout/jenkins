@@ -6,11 +6,12 @@ pipeline {
         echo "Hello I am here."
         echo "****************."
     }
+   stage("Check Status1"){
     steps {
-            echo "Tumne Khana Khaya Munu."
-            echo "======================="
-            ls -lrt
-        }
+       echo "Tumne Khana Khaya Munu."
+       echo "======================="
+       ls -lrt
+    }
   }
  }
 }
