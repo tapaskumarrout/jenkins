@@ -4,6 +4,7 @@ pipeline {
   stage("Check Status1"){
     steps {
         echo "Hello I am here."
+        echo "****************."
     }
     steps {
             echo "Tumne Khana Khaya Munu."
