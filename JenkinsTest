@@ -1,12 +1,12 @@
 pipeline {
  agent any
  stages{
-  stage("Check Status1"){
+  stage('Check Status1'){
     steps {
         echo "Hello I am here."
         echo "****************."
     }
-   stage("Check Status1"){
+   stage("Check Status2"){
     steps {
        echo "Tumne Khana Khaya Munu."
        echo "======================="
