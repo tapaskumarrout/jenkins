@@ -15,4 +15,7 @@ pipeline {
                                     }
                                 }
             }
+            post{
+             echo 'I am always happy.'
+            }
          }
