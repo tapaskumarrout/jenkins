@@ -1,5 +1,9 @@
 pipeline {
   agent any
+        parameters{
+                  string(name: 'PERSON', defaultvalue: "Mr XXXX", description : 'I am male.')
+                  text(name: 'BIOGRAPHY', defaultValue: '', description: 'Enter some information about the person')
+                }
         stages{
             stage('Check Status1'){
                                 steps {
@@ -7,7 +11,7 @@ pipeline {
                                     echo "***************."
                                     }
                                 }
-            stage("Check Status2"){
+            stage('Check Status2'){
                                 environment {
                                     ENV_URL="google.com"
                                     }
@@ -16,7 +20,14 @@ pipeline {
                                     echo ENV_URL
 
                                     }
+
                                 }
+            stage('Parameters Check'){
+                    steps {
+                            echo "Hello ${params.PERSON}"
+                            echo "Biography: ${params.BIOGRAPHY}"
+                    }
+            }
             }
             post{
              always{
