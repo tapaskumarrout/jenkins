@@ -18,7 +18,6 @@ pipeline {
                                 steps{
                                     echo "======================="
                                     echo ENV_URL
-
                                     }
 
                                 }
