@@ -37,7 +37,7 @@ pipeline {
                 echo 'I am always changed.'
                 }
               fixed {
-                echo 'I am always changed.'
+                echo 'I am fixed.'
                 }
             }
          }
